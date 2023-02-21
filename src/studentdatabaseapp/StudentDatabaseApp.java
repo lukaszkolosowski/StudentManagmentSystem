@@ -4,11 +4,27 @@ public class StudentDatabaseApp {
 
     public static void main(String[] args) {
 
-        Student student1 = new Student();
-        student1.enroll();
+        /* Student Database Application
+        You are a Database Administrator for a university and need to create
+        an application to manage student enrollments and balance.
 
-        //Ask how many new users we want to add
+        This application should do the following:
+        -> Ask the user how many new students will be added to the database.
+        -> The user should be prompted to enter the name and year for each student.
+        -> The student should have a 5-digit unique ID, with the forst number being their grade level
+        -> A student can enroll in the following courses:
+            History
+            Mathematics
+            English
+            Spain
+            Computer Science
+        -> Each course costs 500 PLN to enroll
+        -> The student should be able to view their balance and pay the tuition
+        -> To see the status of the student, we should see their name, ID, courses enrolled and balance.
+        */
 
-        //Create n number of new students
+        AddNewStudents addNewStudents = new AddNewStudents();
+        addNewStudents.howManyNewStudentsWeWantToAdd();
+
     }
 }
